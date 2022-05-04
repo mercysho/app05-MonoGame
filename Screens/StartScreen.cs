@@ -30,29 +30,16 @@ namespace App05MonoGame.Screens
         public void LoadContent()
         {
             backgroundImage = game.Content.Load<Texture2D>(
-                "backgrounds/Space6000x4000");
+                "backgrounds/green_background720p");
 
             CreateInstructions();
 
             arialFont = game.Content.Load<SpriteFont>("fonts/arial");
             
             SetupCoinsButton();
-            SetupAsteroidsButton();
                 
         }
 
-        private void SetupAsteroidsButton()
-        {
-            asteroidsButton = new Button(arialFont,
-                game.Content.Load<Texture2D>("Controls/button-icon-png-200"))
-            {
-                Position = new Vector2(1100, 640),
-                Text = "Asteroids",
-                Scale = 0.8f
-            };
-
-            asteroidsButton.click += StartAsteroidsGame;
-        }
 
         private void SetupCoinsButton()
         {
@@ -107,13 +94,11 @@ namespace App05MonoGame.Screens
             }
 
             coinsButton.Draw(spriteBatch, gameTime);
-            asteroidsButton.Draw(spriteBatch, gameTime);
         }
 
         public void Update(GameTime gameTime)
         {
             coinsButton.Update(gameTime);
-            asteroidsButton.Update(gameTime);
         }
     }
 }

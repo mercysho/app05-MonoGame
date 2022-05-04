@@ -27,7 +27,7 @@ namespace App05MonoGame
     /// 
     /// </summary>
     /// <authors>
-    /// Derek Peacock & Andrei Cruceru
+    /// Modified by Mercy Sholola
     /// </authors>
     public class App05Game : Game
     {
@@ -36,9 +36,9 @@ namespace App05MonoGame
         public const int Game_Height = 720;
         public const int Game_Width = 1280;
 
-        public const string GameName = "Game Name";
+        public const string GameName = "Mercy's Coins";
         public const string ModuleName = "BNU CO453 2021";
-        public const string AuthorNames = "Derek & Andrei";
+        public const string AuthorNames = "Mercy Sholola";
         public const string AppName = "App05: C# MonoGame";
 
         #endregion
@@ -68,7 +68,6 @@ namespace App05MonoGame
 
         private StartScreen startScreen;
         private CoinsScreen coinsScreen;
-        private AsteroidsScreen asteroidsScreen;
 
         #endregion
 
@@ -114,7 +113,8 @@ namespace App05MonoGame
             // Load Music and SoundEffects
 
             SoundController.LoadContent(Content);
-            SoundController.PlaySong("Adventure");
+           
+            // SoundController.PlaySong("Adventure");
 
             startScreen = new StartScreen(this);
         }
@@ -146,12 +146,6 @@ namespace App05MonoGame
                     coinsScreen.Update(gameTime);
                     break;
                 
-                // Asteroids Game
-                case GameStates.PlayingLevel2:
-                    if (asteroidsScreen == null)
-                        asteroidsScreen = new AsteroidsScreen(this);
-                    asteroidsScreen.Update(gameTime);
-                    break;
                 
                 case GameStates.Ending:
                     break;
@@ -182,11 +176,6 @@ namespace App05MonoGame
                 case GameStates.PlayingLevel1:
                     if (coinsScreen != null)
                         coinsScreen.Draw(spriteBatch, gameTime);
-                    break;
-
-                case GameStates.PlayingLevel2:
-                    if (asteroidsScreen != null)
-                        asteroidsScreen.Draw(spriteBatch, gameTime);
                     break;
 
                 case GameStates.Ending:
