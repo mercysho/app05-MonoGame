@@ -23,7 +23,7 @@ namespace App05MonoGame.Controllers
     /// collisions with the player sprite
     /// </summary>
     /// <authors>
-    /// MERCY sHOLOLA
+    /// Mercy Sholola
     /// </authors>
     public class CoinsController : IUpdateableInterface, 
         IDrawableInterface, ICollideableInterface

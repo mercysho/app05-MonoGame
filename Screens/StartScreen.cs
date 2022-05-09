@@ -61,13 +61,13 @@ namespace App05MonoGame.Screens
         {
             instructions = new List<string>();
 
-            instructions.Add("The player can move around by ...");
-            instructions.Add("Every time the player collides with a coin...");
-            instructions.Add("A dog moves around ...");
-            instructions.Add("Every time the dog collides with the player...");
-            instructions.Add("Energy is lost...");
-            instructions.Add("The game is won when...");
-            instructions.Add("The game is lost when...");
+            instructions.Add("Player can move around by using the arrows on keyboard");
+            instructions.Add("Every time the player collides with a coin, player gets a score");
+            instructions.Add("A dog moves around, acts as enemy to also get coin");
+            instructions.Add("Every time the dog collides with the player, player loses life");
+            instructions.Add("Energy is lost player loses life");
+            instructions.Add("The game is won when player collects more coins than enemy");
+            instructions.Add("The game is lost when enemy collects more coins than player");
         }
 
         private void StartCoinsGame(object sender, System.EventArgs e)
