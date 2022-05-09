@@ -38,7 +38,7 @@ namespace App05MonoGame
        
 
         public const string GameName = "Mercy's Coins";
-        public const string ModuleName = "BNU CO453 2021";
+        public const string ModuleName = "BNU CO453 2022";
         public const string AuthorNames = "Mercy Sholola";
         public const string AppName = "App05: C# MonoGame";
 
