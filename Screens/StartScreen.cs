@@ -47,7 +47,7 @@ namespace App05MonoGame.Screens
                 game.Content.Load<Texture2D>("Controls/button-icon-png-200"))
             {
                 Position = new Vector2(1130, 580),
-                Text = "Coins",
+                Text = "Start",
                 Scale = 0.6f
             };
 
@@ -75,10 +75,7 @@ namespace App05MonoGame.Screens
             game.GameState = GameStates.PlayingLevel1;
         }
 
-        private void StartAsteroidsGame(object sender, System.EventArgs e)
-        {
-            game.GameState = GameStates.PlayingLevel2;
-        }
+        
 
         public void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {

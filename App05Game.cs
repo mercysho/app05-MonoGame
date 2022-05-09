@@ -35,6 +35,7 @@ namespace App05MonoGame
 
         public const int Game_Height = 720;
         public const int Game_Width = 1280;
+       
 
         public const string GameName = "Mercy's Coins";
         public const string ModuleName = "BNU CO453 2021";

@@ -8,6 +8,7 @@ namespace App05MonoGame.Screens
 {
     public class CoinsScreen : IUpdateableInterface, IDrawableInterface
     {
+       
         #region Attributes
 
         private App05Game game;
